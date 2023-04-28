@@ -19,7 +19,7 @@ app.use((req, res, next)=>{
     next();
 });
 
-mongoose.connect("mongodb://127.0.0.1:27017/fashionista");
+mongoose.connect("mongodb+srv://rathodravirajsinh:mongo143@fashion.tjd9hfc.mongodb.net/fashionista?retryWrites=true&w=majority");
 let db = mongoose.connection;
 db.on("error", error=> console.log(error));
 db.on("open", ()=> console.log("Connection Established"));
