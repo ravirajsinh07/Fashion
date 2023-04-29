@@ -26,7 +26,7 @@ db.on("open", ()=> console.log("Connection Established"));
 
 
 app.get("/", function(req, res){
-    res.send("Welcome to Back End");
+    res.send("Welcome to Fashionista Back End");
     res.end();
 });
 
